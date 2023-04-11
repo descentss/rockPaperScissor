@@ -5,8 +5,9 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .title,
@@ -20,18 +21,18 @@ h1 {
 }
 
 .instructionscontainer {
-  max-width: 44rem;
+  max-width: 44rem; /* 700px*/
   height: 8rem;
   border-radius: 10%;
   border-color: #fff;
   border-width: 5px;
   padding: 10px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  margin: 0 auto;
+  text-align: justify;
+  margin: 0 auto; /* centers within parent element, usually works when element has set width/
 }
 
 .instructions {
@@ -51,8 +52,8 @@ h1 {
 }
 
 button {
-  height: 12rem;
-  width: 12rem;
+  height: 9rem;
+  width: 9rem;
   border-radius: 50%;
   border-width: 5px;
   border-style: solid;
@@ -67,6 +68,7 @@ button {
   letter-spacing: 1px;
   font-weight: bold;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 4rem;
 }
 
 button:hover {

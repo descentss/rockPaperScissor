@@ -55,3 +55,12 @@ function game() {
 }
 
 // game();
+
+function game() {
+  const rock = document.querySelector("button:nth-of-type(1)");
+  const paper = document.querySelector("button:nth-of-type(2)");
+  const scissor = document.querySelector("button:nth-of-type(3)");
+  rock.addEventListener("click", () => {
+    const playerSelection = "rock";
+  });
+}
