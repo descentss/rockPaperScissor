@@ -1,5 +1,11 @@
 "use strict";
 
+// Initial Data
+let playerScore = 0;
+let computerScore = 0;
+let round = 1;
+
+// Playing a round and scenarios
 function playRound(playerSelection, computerSelection) {
   if (playerSelection === computerSelection) {
     return "It's a tie!";
@@ -14,17 +20,15 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
+// Computer Move
 function computerPlay() {
   const options = ["rock", "paper", "scissors"];
   const randomIndex = Math.floor(Math.random() * options.length);
   return options[randomIndex];
 }
 
+// Game
 function game() {
-  let playerScore = 0;
-  let computerScore = 0;
-  let round = 1;
-
   for (let i = 0; i < 5; i++) {
     const playerSelection = prompt(
       "Choose rock, paper, or scissors:"
