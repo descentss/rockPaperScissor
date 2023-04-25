@@ -3,34 +3,55 @@
   <head>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
+    <title>ROCK PAPER SCISSOR</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper and Scissor Game</title>
   </head>
   <script src="script.js" defer></script>
   <body>
-    <div class="title">
-      <h1>ROCK PAPER SCISSOR</h1>
+    <div class="header">
+      <h1>Rock Paper Scissor Game</h1>
     </div>
     <div id="round">ROUND 1</div>
-    <div class="visual-container">
-      <div class="move-player">👊</div>
-      <div class="move-computer">👊</div>
+    <div class="visualcontainer">
+      <div class="area-player">
+        <div class="move-player">❔</div>
+        <div class="score-player">Player: 0</div>
+      </div>
+      <div class="area-computer">
+        <div class="move-computer">❔</div>
+        <div class="score-computer">Computer: 0</div>
+      </div>
+    </div>
+    <div class="results">
+      <p>First to score 5 points wins the game</p>
     </div>
     <div class="instructionscontainer">
       <div class="instructions">
-        <p>
-          To play rock-paper-scissors, both players choose either rock, paper,
-          or scissors and reveal their choices at the same time. Rock beats
-          scissors, scissors beat paper, and paper beats rock. Play five rounds
-          and keep track of who wins each round.
-        </p>
+        <p>Choose your next move!</p>
       </div>
     </div>
     <div class="container">
-      <button>👊</button>
-      <button>✋</button>
-      <button>✌️</button>
+      <button id="rock">👊</button>
+      <button id="paper">✋</button>
+      <button id="scissor">✌️</button>
     </div>
+    <footer class="footer">
+      <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        descentss
+      </p>
+      <a href="https://github.com/descentss" target="_blank">
+        <i class="fab fa-github"></i
+      ></a>
+    </footer>
+    <div class="modal" id="endgameModal">
+      <p class="modal-title" id="endgameMsg"></p>
+      <button class="btn btn-restart" id="restartBtn">Play again</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
   </body>
 </html>
