@@ -165,6 +165,8 @@ function setFinalMessage() {
 function restartGame() {
   playerScore = 0;
   computerScore = 0;
+  round = 1;
+  roundVisual.textContent = `ROUND ${round}`;
   results.textContent = "First to score 5 points wins the game";
   scorePlayer.textContent = "0";
   scoreComputer.textContent = "0";
